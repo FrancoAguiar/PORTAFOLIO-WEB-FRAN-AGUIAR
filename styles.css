@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap');
+
+:root {
+    --verde: #B1FF4F;
+    --color-secundario: #e74c3c;
+    --gris: #D9D9D9;
+}
+
+body{
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(45,45,45,1) 0%, rgba(32,32,32,1) 85%);
+
+}
+
+/* HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    min-height: 60px;
+    align-items: center;
+    padding: 10px;
+}
+
+.link-header a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  font-family: 'Poppins', sans-serif;
+  padding-right: 60px;
+}
+
+.link-header a:hover{
+    color: var(--verde);
+    transition: 500ms;
+}
+
+
+.logo{
+    height: 50px;
+    align-items: center;
+    padding-left: 60px;
+}
+
+@media (max-width: 700px) {
+    header{
+        flex-direction: column;
+    }
+}
+
+/* SECTION DE TEXTO CENTER FRAN AGUIAR */
+
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10%;
+}
+
+.div1 p:nth-child(1){
+    font-size: 2rem;
+    color: var(--verde);
+    margin-bottom: -40px;
+}
+
+.div1 p:nth-child(2){
+    font-size: 6rem;
+    font-weight: 600;
+    color: var(--gris);
+    margin: 0;
+    padding: 0;
+}
+
+.div1 p:nth-child(3){
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--gris);
+    margin-top: -40px;
+}
+
+.div1 p:nth-child(4){
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    color: var(--gris);
+    margin-top: -40px;
+}
+
+span {
+    margin-left: 10px;
+    color: var(--verde);
+    font-weight: 600;
+}
+
+/* SECTION DE PARRAFO */
+
+.parrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+}
+
+.social{
+    margin-left: 3.5rem;
+}
+
+.section-social{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.social div {
+    margin: 1rem;
+}
+
+.social div a img {
+    transition: transform 0.3s ;
+}
+
+.social div a img:hover {
+    transform: scale(1.2);
+}
