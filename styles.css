@@ -6,10 +6,13 @@
     --verde: #B1FF4F;
     --color-secundario: #e74c3c;
     --gris: #D9D9D9;
+    --negro: #1B1B1B;
 }
 
 body{
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(45,45,45,1) 0%, rgba(32,32,32,1) 85%);
+    margin: 0;
+    overflow-x: hidden;
+    background-image: radial-gradient(circle, #202020, #252525, #292929, #2e2e2e, #333333, #333333, #333333, #333333, #2e2e2e, #292929, #252525, #202020);
 
 }
 
@@ -23,7 +26,7 @@ header{
     padding: 10px;
 }
 
-.link-header a {
+.link-nav {
   text-decoration: none;
   color: white;
   font-weight: 100;
@@ -31,7 +34,7 @@ header{
   padding-right: 60px;
 }
 
-.link-header a:hover{
+.link-nav:hover{
     color: var(--verde);
     transition: 500ms;
 }
@@ -41,7 +44,13 @@ header{
     height: 50px;
     align-items: center;
     padding-left: 60px;
+    transition: transform 0.3s ease-out;
 }
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
 
 @media (max-width: 700px) {
     header{
@@ -128,4 +137,302 @@ span {
 
 .social div a img:hover {
     transform: scale(1.2);
+}
+
+
+.cards-div {
+    display: contents;
+}
+
+.cards {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    padding: 5rem;
+    margin-bottom: -5rem;
+}
+
+.cards-div div{
+    transition: transform 0.3s ease-out;
+}
+.cards-div div:hover{
+    transform: scale(1.1);
+}
+
+
+.section-subtitle{
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.subtitle h2{
+    font-size: 3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.subtitle p {
+    font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    text-align: center;
+    color: var(--gris);
+}
+
+.button-cards {
+    padding: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: var(--negro);
+    color: var(--gris);
+    text-decoration: none;
+}
+
+.button-cards-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containers {
+    margin-top: 10rem;
+    width: auto;
+    height: 46rem;
+    background-image: url('./images/image-aboutme_11zon.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.child1 {
+    margin-left: 2rem;
+    width: 45rem;
+}
+
+.child2 {
+    display: flex;
+    justify-content: flex-end;
+    width: 45rem;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
+}
+
+.child1 h2 {
+    font-size: 3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.child1 p {
+    font-size: 1.3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.child2 h2 {
+    font-size: 3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.child2 p,ul {
+    font-size: 1.3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.containers {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.container2 {
+    margin-right: 2rem;
+}
+
+.social-lenguage{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-lenguage div {
+    margin-left: 1rem;
+}
+
+.social-lenguage div a img {
+    transition: transform 0.3s ;
+}
+
+.social-lenguage div a img:hover {
+    transform: scale(1.2);
+}
+
+.child3 h2 {
+    font-size: 3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.information{
+    width: 25%;
+    text-align: center;
+    padding: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.information h2 {
+    font-size: 3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.information h3 {
+    font-size: 1.5rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.information p {
+    font-size: 1.3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.social2{
+    display: flex;
+    justify-content: center;
+}
+
+.social2 div {
+    margin: 1rem;
+}
+
+.social2 div a img {
+    transition: transform 0.3s ;
+}
+
+.social2 div a img:hover {
+    transform: scale(1.2);
+}
+
+
+.social-lenguage-2{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.social-lenguage-2 div {
+    margin-left: 1rem;
+}
+
+.social-lenguage-2 div a img {
+    transition: transform 0.3s ;
+}
+
+.social-lenguage-2 div a img:hover {
+    transform: scale(1.2);
+}
+
+.child-programming h2{
+    font-size: 3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+/*FORMULARIO ESTILOS*/
+
+.form-styles{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 2rem;
+    box-shadow: 1px -1px 11px 7px rgba(32,32,32,0.61);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(32,32,32,0.61);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(32,32,32,0.61);
+    padding-bottom: 4rem;
+
+}
+
+.div-button {
+    display: flex;
+    justify-content: center;
+}
+
+.form-styles h2{
+    font-size: 3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.form-styles label{
+    font-size: 1.3rem;
+    color: var(--gris);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+}
+
+.form-styles input{
+    margin-bottom: 3rem;
+    border: none; /* Elimina todos los bordes */
+    outline: none; /* Elimina el contorno al enfocar */
+    border-bottom: 1px solid #ccc; /* Borde inferior */
+    padding: 5px 0; /* Espaciado interno superior e inferior */
+    font-size: 16px;
+    width: 100%; /* Ancho del input */
+    background-color: transparent; /* Fondo transparente */
+    color: var(--gris);
+}
+
+
+.form{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
+.button {
+    padding: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: var(--negro);
+    color: var(--gris);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    width: 10rem;
+    box-shadow: 1px -1px 11px 7px rgba(32,32,32,0.61);
+    -webkit-box-shadow: 1px -1px 11px 7px rgba(32,32,32,0.61);
+    -moz-box-shadow: 1px -1px 11px 7px rgba(32,32,32,0.61);
 }
